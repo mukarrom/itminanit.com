@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import AOS from 'aos';
+import logo from '../../assets/shap/logo-white.png';
 
 function Navbar() {
   const [bgGradient, setBgGradient] = useState('');
@@ -10,10 +12,19 @@ function Navbar() {
       setBgGradient('');
     }
   });
+
+  AOS.init();
   return (
-    <div className={`navbar text-white z-10 relative ${bgGradient}`}>
+    <div
+      className={`navbar text-white z-10 relative ${bgGradient}`}
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <div className="navbar-start">
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">
+          <img src={logo} alt="" />
+        </a>
       </div>
       <div className="navbar-end">
         {/* menu icon */}

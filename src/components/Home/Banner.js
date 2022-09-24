@@ -8,7 +8,9 @@ function Banner() {
   return (
     <div className="gradient-bg1 w-full lg:h-screen text-white relative overflow-hidden">
       <div className="">
-        <Navbar />
+        <div className="mt-10">
+          <Navbar className="" />
+        </div>
         <div className="w-[48vw] absolute  top-[-16vw] left-[-20vw] hidden lg:block">
           <img src={shape8} alt="" className="w-full" />
         </div>
