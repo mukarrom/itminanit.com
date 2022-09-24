@@ -81,6 +81,9 @@
 		background: -webkit-linear-gradient(left, #3264f5 2%, #7004bc 82%);
 		background: linear-gradient(to right, #3264f5 2%, #7004bc 82%);
 	}
+	.gradient-bg2 {
+		background:linear-gradient(to right, #7004bc 2%, #3264f5 82%)
+	}
 }
 @layer base {
 }

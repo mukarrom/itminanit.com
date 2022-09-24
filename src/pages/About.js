@@ -8,7 +8,7 @@ function About() {
         <div className="">
           <p className="">We are magaone company</p>
           <h1 className="h1">We are making design better for everyone</h1>
-          <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore reiciendis obcaecati. Mollitia eaque, doloremque quos in quasi quis, quas, molestias assumenda placeat temporibus ad accusamus! Quo tempora qui amet!</p>
+          <p className="my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore reiciendis obcaecati. Mollitia eaque, doloremque quos in quasi quis, quas, molestias assumenda placeat temporibus ad accusamus! Quo tempora qui amet!</p>
           <div className="">
             <button type="button" className="bg-yellow py-3 px-8 rounded-full hover:bg-primary hover:text-white">Learn More</button>
           </div>

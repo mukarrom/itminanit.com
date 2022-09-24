@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Navbar() {
+  const [bgGradient, setBgGradient] = useState('');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      setBgGradient('gradient-bg2');
+    } else {
+      setBgGradient('');
+    }
+  });
   return (
-    <div className="navbar text-white py-8 z-10 relative">
+    <div className={`navbar text-white z-10 relative ${bgGradient}`}>
       <div className="navbar-start">
         <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
       </div>
@@ -102,7 +111,7 @@ function Navbar() {
           <li>
             <a>Contact Us</a>
           </li>
-          <li>
+          <li className="border rounded-full hover:bg-white hover:text-gray-dark">
             <a>Get a Quote</a>
           </li>
         </ul>
