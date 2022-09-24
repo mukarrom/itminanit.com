@@ -19,7 +19,7 @@ function Navbar() {
       className={`navbar text-white z-10 relative ${bgGradient}`}
       data-aos="fade-down"
       data-aos-easing="linear"
-      data-aos-duration="1500"
+      data-aos-duration="500"
     >
       <div className="navbar-start">
         <a className="btn btn-ghost normal-case text-xl">

@@ -7,10 +7,10 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  const [hide, setHide] = useState('');
+  const [hide, setHide] = useState('hidden');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 120) {
       setHide('block');
     } else {
       setHide('hidden');
@@ -35,9 +35,9 @@ function App() {
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
-        className="bg-purple text-white p-32"
+        className="bg-purple text-white p-32 text-center"
       >
-        Hello everyone how are you
+        Enimation Test
       </div>
     </div>
   );
