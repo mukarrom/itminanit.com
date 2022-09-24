@@ -23,5 +23,7 @@ module.exports = {
     'global-require': 1,
     'react/no-unescaped-entities': 1,
     'max-len': 0,
+    'no-tabs': 1,
+    'no-mixed-spaces-and-tabs': 1,
   },
 };

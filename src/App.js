@@ -1,32 +1,11 @@
-import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import AOS from 'aos';
 import Home from './pages/Home';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  const [hide, setHide] = useState('hidden');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 120) {
-      setHide('block');
-    } else {
-      setHide('hidden');
-    }
-  });
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div>
-      <div
-        className={`sticky top-0 z-50 ${hide}`}
-      >
-        <Navbar />
-      </div>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

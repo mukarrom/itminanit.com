@@ -3,23 +3,26 @@ import AOS from 'aos';
 import logo from '../../assets/shap/logo-white.png';
 
 function Navbar() {
-  const [bgGradient, setBgGradient] = useState('');
+  // const [bgGradient, setBgGradient] = useState(false);
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-      setBgGradient('gradient-bg2');
-    } else {
-      setBgGradient('');
-    }
-  });
+  // const changeBg = () => {
+  //   if (window.scrollY >= 150) {
+  //     setBgGradient(true);
+  //   } else {
+  //     setBgGradient(false);
+  //   }
+  // };
+
+  // window.addEventListener('scroll', changeBg);
 
   AOS.init();
   return (
     <div
-      className={`navbar text-white z-10 relative ${bgGradient}`}
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="500"
+      className="navbar text-white"
+      // className={bgGradient ? 'navbar text-white' : 'navbar text-white z-[1000] relative'}
+      // data-aos="fade-down"
+      // data-aos-easing="linear"
+      // data-aos-duration="500"
     >
       <div className="navbar-start">
         <a className="btn btn-ghost normal-case text-xl">
