@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+	*,
+	*::before,
+	*::after {
+		@apply box-border;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		:root {
+			@apply scroll-smooth;
+		}
+	}
+
+	body {
+		@apply m-0 font-sans text-base font-normal text-[#212529] bg-[#f5f5f5];
+	}
+
+	hr {
+		@apply my-4 mx-0 text-inherit border-t border-solid opacity-[0.25];
+	}
+	/* margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25; */
+
+	code {
+		@apply font-[source-code-pro,Menlo,Monaco,Consolas,monospace];
+	}
+
+	.h6,
+	.h5,
+	.h4,
+	.h3,
+	.h2,
+	.h1 {
+		@apply mt-0 mb-2 font-medium leading-tight;
+	}
+
+	.h1 {
+		@apply text-[calc(1.375rem+1.5vw)] xl:text-[2.5rem];
+	}
+
+	.h2 {
+		@apply text-[calc(1.325rem+0.9vw)] xl:text-[2rem]
+  /* font-size: calc(1.325rem + 0.9vw); */;
+	}
+
+	.h3 {
+		@apply text-[calc(1.3rem+0.6vw)] xl:text-[1.75rem];
+	}
+
+	.h4 {
+		@apply text-[calc(1.275rem+0.3vw)] xl:text-[1.5rem];
+	}
+
+	.h5 {
+		@apply text-[1.25rem];
+	}
+
+	.h6 {
+		@apply text-[1rem];
+	}
+
+	p {
+		@apply mt-0 mb-4;
+	}
+
+	/* More */
+	.bgGradientPrimary {
+		@apply bg-gradient-to-l from-secondary to-[#3363f5];
+	}
+
+	.gradient-bg1 {
+		background: #3264f5;
+		background: -moz-linear-gradient(left, #3264f5 2%, #7004bc 82%);
+		background: -webkit-linear-gradient(left, #3264f5 2%, #7004bc 82%);
+		background: linear-gradient(to right, #3264f5 2%, #7004bc 82%);
+	}
+}
+@layer base {
+}
+@layer utilities {
 }
