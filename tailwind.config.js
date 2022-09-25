@@ -51,6 +51,10 @@ module.exports = {
         light: '#f8f9fa',
         dark: '#343a40',
       },
+      backgroundImage: {
+        'service-pattern': "url('/src/assets/shap/dot-shape.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
     },
   },
   plugins: [require('daisyui')],

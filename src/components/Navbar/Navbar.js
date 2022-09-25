@@ -1,29 +1,8 @@
-import React, { useState } from 'react';
-import AOS from 'aos';
 import logo from '../../assets/shap/logo-white.png';
 
 function Navbar() {
-  // const [bgGradient, setBgGradient] = useState(false);
-
-  // const changeBg = () => {
-  //   if (window.scrollY >= 150) {
-  //     setBgGradient(true);
-  //   } else {
-  //     setBgGradient(false);
-  //   }
-  // };
-
-  // window.addEventListener('scroll', changeBg);
-
-  AOS.init();
   return (
-    <div
-      className="navbar text-white"
-      // className={bgGradient ? 'navbar text-white' : 'navbar text-white z-[1000] relative'}
-      // data-aos="fade-down"
-      // data-aos-easing="linear"
-      // data-aos-duration="500"
-    >
+    <div className="navbar text-white">
       <div className="navbar-start">
         <a className="btn btn-ghost normal-case text-xl">
           <img src={logo} alt="" />
@@ -86,7 +65,7 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a>Home</a>
+            <a href="#home">Home</a>
           </li>
           {/* <li tabIndex={0}>
             <a>
@@ -111,7 +90,7 @@ function Navbar() {
             </ul>
           </li> */}
           <li>
-            <a>About Us</a>
+            <a href="#about">About Us</a>
           </li>
           <li>
             <a>Our Works</a>

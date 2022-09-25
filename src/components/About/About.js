@@ -1,5 +1,5 @@
 import React from 'react';
-import vector2 from '../assets/vector/vector-art-2.png';
+import vector2 from '../../assets/vector/vector-art-2.png';
 
 function About() {
   return (
