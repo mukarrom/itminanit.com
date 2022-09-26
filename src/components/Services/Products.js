@@ -2,37 +2,51 @@ import React from 'react';
 import product1 from '../../assets/service/Picture-eduman-1024x575.png';
 import product2 from '../../assets/service/picture-Online-Addmi-1024x575.png';
 import product3 from '../../assets/service/Website1-1024x576.png';
+import product4 from '../../assets/service/picture-Attendance-1024x575.png';
+import ProductCard from './ProductCard';
 
 function Products() {
   return (
     <section className="w-full font-Poppins">
       <div className="container font-[Poppins]  mx-auto py-24 xl:max-w-6xl">
         <div className=" text-center">
-          <h1 className="h1 text-[#3b224e] font-bold font-anek" data-aos="zoom-in-up">
+          <h1
+            className="h1 text-[#3b224e] font-bold font-anek"
+            data-aos="zoom-in-up"
+          >
             আমাদের পণ্য-সেবা
           </h1>
-          <p className="uppercase text-pink text-lg mb-20" data-aos="zoom-in font-tiro">
+          <p
+            className="uppercase text-pink text-lg mb-20"
+            data-aos="zoom-in font-tiro"
+          >
             ব্যক্তিগত ও প্রাতিষ্ঠানিক কাজের বোঝা কমুক, বেড়ে যাক সাচ্ছন্দ্যময়
             জীবনের গতি
           </p>
         </div>
-        <div className="flex flex-wrap justify-center space-x-4">
-          <div className="card w-1/4  font-tiro">
-            <div className="img">
-              <img src={product1} alt="" />
-            </div>
-            <h2 className="h2">Eduman</h2>
-            <p className="p">
-              এডুম্যান সফটওয়্যারে আস্থা রেখেছে ৫০০০+ স্কুল-কলেজ, ৫০০০০ শিক্ষক,
-              ২০ লক্ষ+ শিক্ষার্থী ও অভিভাবকগণ।
-            </p>
-            <button
-              type="button"
-              className="btn-secondary py-2 px-4 rounded-full"
-            >
-              আরো জানতে
-            </button>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center sm:gap-x-4 lg:gap-x-2 gap-y-8">
+          <ProductCard
+            img={product1}
+            name="Eduman"
+            heading="এডুম্যান সফটওয়্যারে আস্থা রেখেছে ৫০০০+ স্কুল-কলেজ, ৫০০০০ শিক্ষক,
+                ২০ লক্ষ+ শিক্ষার্থী ও অভিভাবকগণ।"
+          />
+          <ProductCard
+            img={product2}
+            name="Admisia"
+            heading="শিক্ষা প্রতিষ্ঠানের জন্য অনলাইন এডমিশনের একটি কমপ্লিট সলিউশন দিচ্ছে এডমিশিয়া ওয়েব সফটওয়্যার। সংযোজন করা যাবে প্রতিষ্ঠানের ওয়েবসাইটে।"
+          />
+          <ProductCard
+            img={product3}
+            name="Dynamic Website"
+            heading="কোন প্রকার কোডিং জ্ঞান ছাড়াই তথ্য আপডেট রাখার সুবিধা সহ শিক্ষা প্রতিষ্ঠান কিংবা ব্যবসা প্রতিষ্ঠানের জন্য আমরা দিচ্ছি ডায়নামিক/স্ট্যাটিক ওয়েবসাইট।"
+          />
+          <ProductCard
+            img={product4}
+            name="Attendance Device"
+            heading="
+প্রচলিত ডিভাইস নির্ভর এডেন্টেন্সের ঝক্কি-ঝামেলা সীমাহীন, শিক্ষার্থী-শিক্ষকগণ পাবেন এবার নতুন এক্সপেরিয়েন্স।"
+          />
         </div>
       </div>
     </section>
