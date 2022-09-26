@@ -9,10 +9,10 @@ function Services() {
   return (
     <section className="bg-service-pattern">
       <div className="font-[Poppins]  mx-auto py-24 xl:max-w-6xl">
-        <p className="uppercase text-center text-pink text-lg">
+        <p className="uppercase text-center text-pink text-lg" data-aos="zoom-in">
           Services We're Provided
         </p>
-        <h1 className="h1 text-center text-[#3b224e] font-bold mb-20">
+        <h1 className="h1 text-center text-[#3b224e] font-bold mb-20" data-aos="zoom-in-up">
           Our Digital Marketing Services
         </h1>
         <div className="card-wrapper grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8">
@@ -21,34 +21,43 @@ function Services() {
             category="ppc"
             heading="Digital Media & PPC Advertising"
             img={service1}
+            dataAos="fade-right"
           />
           <ServiceCard
             bg="#ffdadb"
             category="MARKETING"
             heading="Content Marketing Service"
             img={service2}
+            dataAos="fade-left"
           />
           <ServiceCard
             bg="#d6edff"
             category="SEO"
             heading="Search Engine Optimization"
             img={service3}
+            dataAos="fade-right"
           />
           <ServiceCard
             bg="#ffede1"
             category="ppc"
             heading="Website Design & Development"
             img={service4}
+            dataAos="fade-left"
           />
         </div>
-        <div className="flex flex-wrap justify-center space-y-6 md:space-y-0 mt-24">
+        <div className="flex flex-wrap justify-center space-y-6 md:space-y-0 mt-24" data-aos="fade-up" data-aos-duration="1000">
           <div className="text-3xl">
             <span>Let's Start A</span>
             {' '}
             <span className="font-bold">New Project Together</span>
           </div>
           <div className="button">
-            <button type="button" className="btn btn-secondary rounded-full px-8 ml-8">Request a Quote &gt;</button>
+            <button
+              type="button"
+              className="btn btn-secondary rounded-full px-8 ml-8"
+            >
+              Request a Quote &gt;
+            </button>
           </div>
         </div>
       </div>

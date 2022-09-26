@@ -12,7 +12,7 @@ function Home() {
       <section className="w-10/12 mx-auto" id="about">
         <About />
       </section>
-      <section className="">
+      <section id="service">
         <Services />
       </section>
     </div>

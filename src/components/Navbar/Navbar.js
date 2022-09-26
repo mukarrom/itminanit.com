@@ -93,7 +93,7 @@ function Navbar() {
             <a href="#about">About Us</a>
           </li>
           <li>
-            <a>Our Works</a>
+            <a href="#service">Our Works</a>
           </li>
           <li>
             <a>Clients</a>

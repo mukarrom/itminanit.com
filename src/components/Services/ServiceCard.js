@@ -1,19 +1,20 @@
 import React from 'react';
 
 function ServiceCard({
-  bg, category, heading, img,
+  bg, category, heading, img, dataAos,
 }) {
   return (
     <div
       className={`bg-[#e9ddff] bg-${bg} p-10 flex flex-row justify-between items-center shadow-xl rounded-lg mx-4 lg:mx-0`}
+      data-aos={dataAos}
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="1000"
     >
       <div className="letter">
         <h5 className="text-lg text-[#918BAE]">{category}</h5>
         <h4 className="font-bold h4 mt-9 mb-11">{heading}</h4>
-        <a
-          href=" "
-          className="hover:text-[#ff1f8e]"
-        >
+        <a href=" " className="hover:text-[#ff1f8e]">
           Learn More &gt;
         </a>
       </div>
