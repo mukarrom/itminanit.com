@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      <div
+      {/* <div
         data-aos="fade-zoom-in"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
@@ -17,7 +17,7 @@ function App() {
         className="bg-purple text-white p-32 text-center"
       >
         Enimation Test
-      </div>
+      </div> */}
     </div>
   );
 }

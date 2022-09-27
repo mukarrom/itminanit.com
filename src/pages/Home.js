@@ -4,6 +4,7 @@ import About from '../components/About/About';
 import Services from '../components/Services/Services';
 import Products from '../components/Services/Products';
 import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
 
 function Home() {
   return (
@@ -22,6 +23,9 @@ function Home() {
       </section>
       <section id="contact">
         <Contact />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </div>
   );
