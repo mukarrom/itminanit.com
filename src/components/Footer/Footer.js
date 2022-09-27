@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -79,56 +80,66 @@ function Footer() {
             </ul>
           </div>
           {/* End Contact Us */}
-          {/* Company */}
+          {/* -------> Company <------ */}
           <div className="flex flex-col justify-start items-center md:items-baseline">
-            <h5 className="footer-title h5 text-semibold mb-6">Company</h5>
-            <ul className="footer-address-list">
+            <h3 className="h3 text-[#051359] font-semibold mb-6">Company</h3>
+            <ul className="space-y-2">
               <li>
-                <a href=" " className="link link-hover">
+                <Link href="/" className="link link-hover text-lg">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href=" " className="link link-hover">
+                <Link href="/" className="link link-hover text-lg">
                   Customer's FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" className="link link-hover">
+                <Link href="/" className="link link-hover text-lg">
                   Refund Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" className="link link-hover">
+                <Link href="/" className="link link-hover text-lg">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" className="link link-hover">
+                <Link href="/" className="link link-hover text-lg">
                   Terms and Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href=" " className="link link-hover">
+                <Link href="/" className="link link-hover text-lg">
                   License &amp; Copyright
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
-
-          {/* <div className="flex flex-col justify-start items-center">
-            <span className="footer-title">Company</span>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
-          </div> */}
+          {/* End Company */}
+          {/* -------> Company <------ */}
           <div className="flex flex-col justify-start items-center md:items-baseline">
-            <span className="footer-title">Legal</span>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
+            <h3 className="h3 text-[#051359] font-semibold mb-6">Legal</h3>
+            <ul className="footer-address-list">
+              <li>
+                <Link href="/" className="link link-hover text-lg">
+                  Terms of use
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="link link-hover text-lg">
+                  Privacy policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="link link-hover text-lg">
+                  Cookie policy
+                </Link>
+              </li>
+
+            </ul>
           </div>
+          {/* End Company */}
         </footer>
         <footer className="footer footer-center p-10 text-base-content rounded">
           {/* <div className="grid grid-flow-col gap-4">
