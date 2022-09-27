@@ -84,6 +84,9 @@
 	.gradient-bg2 {
 		background: linear-gradient(to right, #7004bc 2%, #3264f5 82%);
 	}
+	.bg-contact {
+		    background-image: linear-gradient(to bottom,#d8fefc,#fef0f5)
+	}
 	.font-tiro {
 		font-family: 'Tiro Bangla', serif;
 	}

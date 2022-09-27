@@ -3,6 +3,7 @@ import Banner from '../components/Home/Banner';
 import About from '../components/About/About';
 import Services from '../components/Services/Services';
 import Products from '../components/Services/Products';
+import Contact from '../components/Contact/Contact';
 
 function Home() {
   return (
@@ -18,6 +19,9 @@ function Home() {
       </section>
       <section id="products">
         <Products />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </div>
   );
