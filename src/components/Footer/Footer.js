@@ -10,7 +10,7 @@ function Footer() {
       data-aos-duration="600"
     >
       <div className="wrapper font-[Poppins]  mx-auto pt-24 xl:max-w-6xl">
-        <footer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 mb-10 justify-evenly text-base-content">
+        <footer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 lg:gap-y-0 px-4 mb-10 justify-evenly text-base-content">
           <div className="flex flex-col justify-start items-start">
             <h1 className="h1 font-extrabold uppercase text-[#08182b] mb-6">
               Khidma IT
@@ -28,8 +28,8 @@ function Footer() {
               </button>
             </div>
           </div>
-          {/* Contact Us */}
-          <div className="flex flex-col justify-start items-center">
+          {/* -------> Contact Us <--------- */}
+          <div className="flex flex-col justify-start items-center md:items-baseline">
             <h3 className="h3 text-[#051359] font-semibold mb-6">Contact Us</h3>
             <ul>
               {/* Email */}
@@ -70,21 +70,60 @@ function Footer() {
                 <p className="">
                   <span className="font-black text-lg">Address</span>
                   <br />
-                  <span className=""> 2350 Bhairab, Kishoreganj, Dhaka, Bangladesh</span>
+                  <span className="">
+                    {' '}
+                    2350 Bhairab, Kishoreganj, Dhaka, Bangladesh
+                  </span>
                 </p>
               </li>
             </ul>
           </div>
           {/* End Contact Us */}
+          {/* Company */}
+          <div className="flex flex-col justify-start items-center md:items-baseline">
+            <h5 className="footer-title h5 text-semibold mb-6">Company</h5>
+            <ul className="footer-address-list">
+              <li>
+                <a href=" " className="link link-hover">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href=" " className="link link-hover">
+                  Customer's FAQ
+                </a>
+              </li>
+              <li>
+                <a href="" className="link link-hover">
+                  Refund Policy
+                </a>
+              </li>
+              <li>
+                <a href="" className="link link-hover">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="" className="link link-hover">
+                  Terms and Conditions
+                </a>
+              </li>
+              <li>
+                <a href=" " className="link link-hover">
+                  License &amp; Copyright
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <div className="flex flex-col justify-start items-center">
+          {/* <div className="flex flex-col justify-start items-center">
             <span className="footer-title">Company</span>
             <a className="link link-hover">About us</a>
             <a className="link link-hover">Contact</a>
             <a className="link link-hover">Jobs</a>
             <a className="link link-hover">Press kit</a>
-          </div>
-          <div className="flex flex-col justify-start items-center">
+          </div> */}
+          <div className="flex flex-col justify-start items-center md:items-baseline">
             <span className="footer-title">Legal</span>
             <a className="link link-hover">Terms of use</a>
             <a className="link link-hover">Privacy policy</a>
