@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AOS from 'aos';
+import { motion } from 'framer-motion';
 import Navbar from '../Navbar/Navbar';
 import shape8 from '../../assets/shap/shape-8.png';
 import shape7 from '../../assets/shap/shape-7.png';
@@ -28,7 +29,7 @@ function Banner() {
 					}
 					// data-aos={bg ? 'fade-down' : null}
 					// data-aos-easing={bg ? 'linear' : null}
-          data-aos-duration={scrolling ? '1000' : null}
+          // data-aos-duration={scrolling ? '1000' : null}
         >
           <Navbar />
         </div>
