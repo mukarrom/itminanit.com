@@ -1,24 +1,14 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import { motion } from 'framer-motion';
 import vector1 from '../../assets/vector/vector-art-1.png';
 
 function HeroCard() {
-  const styles = useSpring({
-    loop: { reverse: true },
-    from: { x: -50 },
-    to: { x: 0 },
-    config: {
-      duration: 6000,
-    },
-  });
   return (
     <div className="max-w-9/12 flex justify-center items-center space-x-14 mt-6 mx-6 lg:ml-44 mb-16">
       <div className="w-80 hidden lg:block">
-        <animated.div
-          style={{ ...styles }}
-        >
+        <motion.div animate={{ x: [30, -20, 30] }} transition={{ repeat: Infinity, duration: 10 }} spring>
           <img src={vector1} alt="" className="w-full" />
-        </animated.div>
+        </motion.div>
       </div>
       <div className="space-y-10 text-center lg:text-left">
         <div className="space-y-4">

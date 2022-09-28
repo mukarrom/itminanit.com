@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import blog from '../../assets/blog-small.jpg';
 
 function Footer() {
   return (
@@ -117,37 +118,29 @@ function Footer() {
             </ul>
           </div>
           {/* End Company */}
-          {/* -------> Company <------ */}
+          {/* -------> Latest Blogs <------ */}
           <div className="flex flex-col justify-start items-center md:items-baseline">
-            <h3 className="h3 text-[#051359] font-semibold mb-6">Legal</h3>
-            <ul className="footer-address-list">
-              <li>
-                <Link href="/" className="link link-hover text-lg">
-                  Terms of use
+            <h3 className="h3 text-[#051359] font-semibold mb-6">Latest Blogs</h3>
+            <div className="inline-flex gap-x-4">
+              <div className="post-thumb">
+                <Link to="/" className="">
+                  <img src={blog} alt="blog" className="rounded-xl" />
                 </Link>
-              </li>
-              <li>
-                <Link href="/" className="link link-hover text-lg">
-                  Privacy policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="link link-hover text-lg">
-                  Cookie policy
-                </Link>
-              </li>
-
-            </ul>
+              </div>
+              <div className="m-0">
+                <p className="post-meta">
+                  <span className="post-date">
+                    <i className="far fa-clock" />
+                    April 15, 2020
+                  </span>
+                </p>
+                <h4 className="h5"><Link to="/">We Provide you Best &amp; Creative Consulting Service</Link></h4>
+              </div>
+            </div>
           </div>
-          {/* End Company */}
+          {/* End Blogs */}
         </footer>
         <footer className="footer footer-center p-10 text-base-content rounded">
-          {/* <div className="grid grid-flow-col gap-4">
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
-          </div> */}
           <div>
             <div className="grid grid-flow-col gap-4">
               <a>
