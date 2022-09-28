@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AOS from 'aos';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import Navbar from '../Navbar/Navbar';
 import shape8 from '../../assets/shap/shape-8.png';
 import shape7 from '../../assets/shap/shape-7.png';

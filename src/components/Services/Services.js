@@ -51,7 +51,7 @@ function Services() {
             {' '}
             <span className="font-bold">New Project Together</span>
           </div>
-          <div className="button">
+          <div className="">
             <button
               type="button"
               className="btn btn-secondary rounded-full px-8 ml-8"
