@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a01b7f3-a4de-4175-8df8-5145c5605bd4/deploy-status)](https://app.netlify.com/sites/khidma-it/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
