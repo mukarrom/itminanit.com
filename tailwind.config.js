@@ -51,6 +51,21 @@ module.exports = {
         light: '#f8f9fa',
         dark: '#343a40',
       },
+      screens: {
+        xsMax: { raw: '(max-width: 420px)' },
+        smMax: { raw: '(max-width: 640px)' },
+        mdMax: { raw: '(max-width: 768px)' },
+        lgMax: { raw: '(max-width: 1024px)' },
+        xlMax: { raw: '(max-width: 1280px)' },
+        tablet: { min: '640px', max: '1023px' },
+        // => @media (min-width: 640px) { ... }
+
+        laptop: { min: '1024px', max: '1280px' },
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: '1280px',
+        // => @media (min-width: 1280px) { ... }
+      },
       backgroundImage: {
         'service-pattern': "url('/src/assets/shap/dot-shape.png')",
         'footer-texture': "url('/img/footer-texture.png')",
