@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div
       className="bg-contact py-36"
-      data-aos="zoom-out"
+      data-aos="fade-right"
       data-aos-duration="1500"
       data-aos-delay="500"
     >
