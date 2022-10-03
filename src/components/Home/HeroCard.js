@@ -6,7 +6,11 @@ function HeroCard() {
   return (
     <div className="max-w-9/12 flex justify-center items-center space-x-14 mt-6 mx-6 lg:ml-44 mb-16">
       <div className="w-80 hidden lg:block">
-        <motion.div animate={{ x: [30, -20, 30] }} transition={{ repeat: Infinity, duration: 10 }} spring>
+        <motion.div
+          animate={{ x: [30, -20, 30] }}
+          transition={{ repeat: Infinity, duration: 10 }}
+          spring
+        >
           <img src={vector1} alt="" className="w-full" />
         </motion.div>
       </div>
@@ -27,7 +31,7 @@ function HeroCard() {
         <div className="flex justify-center lg:justify-start">
           <button
             type="button"
-            className="py-3 px-8 bg-primary rounded-full hover:bg-white hover:text-black"
+            className="py-3 px-8 bg-[#03a9f5] rounded-full hover:bg-white hover:text-black"
           >
             Learn More
           </button>
