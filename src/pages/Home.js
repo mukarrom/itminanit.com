@@ -5,6 +5,7 @@ import Services from '../components/Services/Services';
 import Products from '../components/Services/Products';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
+import WhyChoseUs from '../components/WhyChoseUs/WhyChoseUs';
 
 function Home() {
   return (
@@ -14,6 +15,9 @@ function Home() {
       </header>
       <section className="w-10/12 mx-auto" id="about">
         <About />
+      </section>
+      <section>
+        <WhyChoseUs />
       </section>
       <section id="service">
         <Services />
