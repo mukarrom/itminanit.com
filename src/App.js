@@ -2,14 +2,10 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import Sidebar from './components/Navbar/Sidebar';
 
 function App() {
   return (
     <div>
-      {/* <div className="h-screen w-full">
-        <Sidebar />
-      </div> */}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const [active, setActive] = useState(null);
+
   const scrollEvent = () => {
     if (window.scrollY >= 150) {
       setScrolling(true);
@@ -11,10 +14,17 @@ export default function Navbar() {
     }
   };
   window.addEventListener('scroll', scrollEvent);
+
+  const links = ['home', 'about', 'why', 'service', 'products', 'contact'];
+
   return (
     <nav
       className="navigation h-[60px] w-full flex items-center relative py-2 px-0 "
-      style={scrolling ? { boxShadow: 'none' } : { boxShadow: '0 2px 2px 2px rgba(9, 9, 9, 0.23)' }}
+      style={
+				scrolling
+				  ? { boxShadow: 'none' }
+				  : { boxShadow: '0 2px 2px 2px rgba(9, 9, 9, 0.23)' }
+			}
     >
       <a href="/" className="brand-name text-xl ml-4">
         Khidma IT
@@ -47,48 +57,68 @@ export default function Navbar() {
 					  isNavExpanded ? 'mdMax:block' : 'mdMax:hidden'
           }`}
         >
-          <li className="my-0 mx-4 mdMax:text-center mdMax:m-0 mdMax:hover:bg-[#eee]">
+          {links.map((link) => (
+            <li className="nav-list-style">
+              <a
+                href={`#${link}`}
+								// eslint-disable-next-line eqeqeq
+                className={`nav-anchor-style ${active === link && 'm-active'}`}
+                onClick={() => setActive(link)}
+              >
+                {link}
+              </a>
+            </li>
+          ))}
+        </ul>
+        {/* <ul
+          className={`flex p-0 mdMax:absolute mdMax:top-[60px] mdMax:left-0 mdMax:flex-col mdMax:w-full mdMax:h-auto mdMax:bg-white mdMax:border-t mdMax:border-solid mdMax:border-t-black ${
+					  isNavExpanded ? 'mdMax:block' : 'mdMax:hidden'
+          }`}
+        >
+          <li className={navListStyle}>
             <a
               href="#home"
-              className="block w-full mdMax:text-black mdMax:w-full mdMax:py-6 mdMax:px-0"
+              className={navAnchorStyle}
             >
               Home
             </a>
           </li>
-          <li className="my-0 mx-4 mdMax:text-center mdMax:m-0 mdMax:hover:bg-[#eee]">
-            <a
-              href="#about"
-              className="block w-full mdMax:text-black mdMax:w-full mdMax:py-6 mdMax:px-0"
+          <li className={navListStyle}>
+            <NavLink
+              to="#about"
+              // href="#about"
+              className={navAnchorStyle}
             >
               About
-            </a>
+            </NavLink>
           </li>
-          <li className="my-0 mx-4 mdMax:text-center mdMax:m-0 mdMax:hover:bg-[#eee]">
-            <a
-              href="#service"
-              className="block w-full mdMax:text-black mdMax:w-full mdMax:py-6 mdMax:px-0"
+          <li className={navListStyle}>
+            <NavLink
+              to="#service"
+              // href="#service"
+              className={navAnchorStyle}
             >
               Our Services
-            </a>
+            </NavLink>
           </li>
-          <li className="my-0 mx-4 mdMax:text-center mdMax:m-0 mdMax:hover:bg-[#eee]">
+          <li className={navListStyle}>
             <a
               href="#product"
-              className="block w-full mdMax:text-black mdMax:w-full mdMax:py-6 mdMax:px-0"
+              className={navAnchorStyle}
             >
               Our Products
             </a>
           </li>
-          <li className="my-0 mx-4 mdMax:text-center mdMax:m-0 mdMax:hover:bg-[#eee]">
+          <li className={navListStyle}>
             <a
               href="#contact"
-              className="block w-full mdMax:text-black mdMax:w-full mdMax:py-6 mdMax:px-0"
+              className={navAnchorStyle}
             >
               Contact Us
             </a>
           </li>
 
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );

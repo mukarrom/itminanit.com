@@ -85,7 +85,7 @@
 		background: linear-gradient(to right, #7004bc 2%, #3264f5 82%);
 	}
 	.bg-contact {
-		    background-image: linear-gradient(to bottom,#d8fefc,#fef0f5)
+		background-image: linear-gradient(to bottom, #d8fefc, #fef0f5);
 	}
 	.font-tiro {
 		font-family: 'Tiro Bangla', serif;
@@ -93,6 +93,42 @@
 	.font-anek {
 		font-family: 'Anek Bangla', sans-serif;
 	}
+	.transition-w-1 {
+		transition: width 1s;
+	}
+	.nav-list-style {
+		@apply my-0 mx-4 mdMax:text-center mdMax:m-0 mdMax:hover:bg-[#eee];
+	}
+	.nav-anchor-style {
+		@apply block w-full mdMax:text-black mdMax:w-full mdMax:py-6 mdMax:px-0 after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full hover:after:transition-w-1;
+	}
+	.m-active {
+		@apply font-bold after:w-full after:h-[2px] after:block after:bg-white;
+	}
+
+	/* 
+	blue: '#007bff',
+	indigo: '#6610f2',
+	purple: '#6f42c1',
+	pink: '#e83e8c',
+	red: '#dc3545',
+	orange: '#fd7e14',
+	yellow: '#ffc107',
+	green: '#28a745',
+	teal: '#20c997',
+	cyan: '#17a2b8',
+	white: '#fff',
+	gray: '#6c757d',
+	'gray-dark': '#343a40',
+	primary: '#007bff',
+	secondary: '#6c757d',
+	success: '#28a745',
+	info: '#17a2b8',
+	warning: '#ffc107',
+	danger: '#dc3545',
+	light: '#f8f9fa',
+	dark: '#343a40',
+	*/
 }
 @layer base {
 }

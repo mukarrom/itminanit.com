@@ -16,7 +16,7 @@ function Home() {
       <section className="w-10/12 mx-auto" id="about">
         <About />
       </section>
-      <section>
+      <section id="why">
         <WhyChoseUs />
       </section>
       <section id="service">
