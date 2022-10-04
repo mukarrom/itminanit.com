@@ -20,7 +20,7 @@ function Banner() {
   };
   window.addEventListener('scroll', scrollEvent);
   return (
-    <div className="gradient-bg1 w-full lg:h-screen text-white relative overflow-hidden z-10">
+    <div className="gradient-bg1 w-full h-screen text-white relative overflow-hidden">
       <div className="">
         <div
           className={
