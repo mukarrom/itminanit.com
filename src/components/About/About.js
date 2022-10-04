@@ -12,9 +12,29 @@ function About() {
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
         >
-          <p className="">We are magaone company</p>
-          <h1 className="h1">We are making design better for everyone</h1>
-          <p className="my-10">
+          <p
+            className=""
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="700"
+          >
+            We are magaone company
+          </p>
+          <h1
+            className="h1"
+            data-aos="fade-down"
+            data-aos-delay="200"
+            data-aos-duration="400"
+          >
+            We are making design better for everyone
+          </h1>
+          <p
+            className="my-10"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            data-aos-duration="500"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore
             reiciendis obcaecati. Mollitia eaque, doloremque quos in quasi quis,
             quas, molestias assumenda placeat temporibus ad accusamus! Quo
@@ -22,8 +42,11 @@ function About() {
           </p>
           <div className="">
             <button
+              data-aos="zoom-out-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
               type="button"
-              className="bg-yellow py-3 px-8 rounded-full hover:bg-primary hover:text-white"
+              className="bg-yellow-400 py-3 px-8 rounded-full hover:bg-primary hover:text-white"
             >
               Learn More
             </button>
@@ -31,7 +54,7 @@ function About() {
         </div>
         <div
           className=""
-          data-aos="fade-left"
+          data-aos="zoom-out"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"

@@ -6,7 +6,7 @@ function Contact() {
     <div
       className="bg-contact py-36"
       data-aos="fade-right"
-      data-aos-duration="1500"
+      data-aos-duration="1000"
       data-aos-delay="500"
     >
       <div className="font-[Poppins]  mx-auto py-24 xl:max-w-6xl bg-[#effefd] grid grid-cols-1 lg:grid-cols-2 p-10">
