@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import NavItems from './NavItems';
+import './navbar.css';
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [active, setActive] = useState(null);
+
+  const items = NavItems();
 
   const scrollEvent = () => {
     if (window.scrollY >= 150) {
@@ -15,11 +18,9 @@ export default function Navbar() {
   };
   window.addEventListener('scroll', scrollEvent);
 
-  const links = ['home', 'about', 'why', 'service', 'products', 'contact'];
-
   return (
     <nav
-      className="navigation h-[60px] w-full flex items-center relative py-2 px-0 "
+      className="navigation"
       style={
 				scrolling
 				  ? { boxShadow: 'none' }
@@ -30,7 +31,7 @@ export default function Navbar() {
         Khidma IT
       </a>
       <button
-        className="hamburger border-0 h-10 w-10 p-2 rounded-[50%] bg-[#283b8b] cursor-pointer absolute top-1/2 right-[25px] -translate-y-1/2 hidden hover:bg-[#2642af] mdMax:block"
+        className="hamburger"
         type="button"
         style={{ transition: 'background-color 0.2s ease-in-out' }}
         onClick={() => {
@@ -53,72 +54,24 @@ export default function Navbar() {
       </button>
       <div className="navigation-menu ml-auto">
         <ul
-          className={`flex p-0 mdMax:absolute mdMax:top-[60px] mdMax:left-0 mdMax:flex-col mdMax:w-full mdMax:h-auto mdMax:bg-white mdMax:border-t mdMax:border-solid mdMax:border-t-black ${
-					  isNavExpanded ? 'mdMax:block' : 'mdMax:hidden'
-          }`}
+					// style={isNavExpanded ? { display: 'block' } : { display: 'hide' }}
+          className={`flex ${isNavExpanded ? 'mdMax:flex' : 'mdMax:hidden'}`}
         >
-          {links.map((link) => (
-            <li className="nav-list-style">
+          {items.map((item, i) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <li className="nav-list-style" key={i}>
               <a
-                href={`#${link}`}
-								// eslint-disable-next-line eqeqeq
-                className={`nav-anchor-style ${active === link && 'm-active'}`}
-                onClick={() => setActive(link)}
+                href={`#${item.link}`}
+                className={`nav-anchor-style ${
+								  active === item.link && 'm-active'
+                }`}
+                onClick={() => setActive(item.link)}
               >
-                {link}
+                {item.name}
               </a>
             </li>
           ))}
         </ul>
-        {/* <ul
-          className={`flex p-0 mdMax:absolute mdMax:top-[60px] mdMax:left-0 mdMax:flex-col mdMax:w-full mdMax:h-auto mdMax:bg-white mdMax:border-t mdMax:border-solid mdMax:border-t-black ${
-					  isNavExpanded ? 'mdMax:block' : 'mdMax:hidden'
-          }`}
-        >
-          <li className={navListStyle}>
-            <a
-              href="#home"
-              className={navAnchorStyle}
-            >
-              Home
-            </a>
-          </li>
-          <li className={navListStyle}>
-            <NavLink
-              to="#about"
-              // href="#about"
-              className={navAnchorStyle}
-            >
-              About
-            </NavLink>
-          </li>
-          <li className={navListStyle}>
-            <NavLink
-              to="#service"
-              // href="#service"
-              className={navAnchorStyle}
-            >
-              Our Services
-            </NavLink>
-          </li>
-          <li className={navListStyle}>
-            <a
-              href="#product"
-              className={navAnchorStyle}
-            >
-              Our Products
-            </a>
-          </li>
-          <li className={navListStyle}>
-            <a
-              href="#contact"
-              className={navAnchorStyle}
-            >
-              Contact Us
-            </a>
-          </li>
-
-        </ul> */}
       </div>
     </nav>
   );

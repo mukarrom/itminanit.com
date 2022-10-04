@@ -96,16 +96,7 @@
 	.transition-w-1 {
 		transition: width 1s;
 	}
-	.nav-list-style {
-		@apply my-0 mx-4 mdMax:text-center mdMax:m-0 mdMax:hover:bg-[#eee];
-	}
-	.nav-anchor-style {
-		@apply block w-full mdMax:text-black mdMax:w-full mdMax:py-6 mdMax:px-0 after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full hover:after:transition-w-1;
-	}
-	.m-active {
-		@apply font-bold after:w-full after:h-[2px] after:block after:bg-white;
-	}
-
+	
 	/* 
 	blue: '#007bff',
 	indigo: '#6610f2',
