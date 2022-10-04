@@ -21,28 +21,28 @@ function Services() {
             category="ppc"
             heading="Digital Media & PPC Advertising"
             img={service1}
-            dataAos="fade-right"
+            dataAos="flip-right"
           />
           <ServiceCard
             bg="#ffdadb"
             category="MARKETING"
             heading="Content Marketing Service"
             img={service2}
-            dataAos="fade-left"
+            dataAos="flip-left"
           />
           <ServiceCard
             bg="#d6edff"
             category="SEO"
             heading="Search Engine Optimization"
             img={service3}
-            dataAos="fade-right"
+            dataAos="flip-right"
           />
           <ServiceCard
             bg="#ffede1"
             category="ppc"
             heading="Website Design & Development"
             img={service4}
-            dataAos="fade-left"
+            dataAos="flip-left"
           />
         </div>
         <div className="flex flex-wrap justify-center space-y-6 md:space-y-0 mt-24" data-aos="fade-up" data-aos-duration="1000">

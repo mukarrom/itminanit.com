@@ -8,9 +8,11 @@ function ServiceCard({
       className=" p-10 flex flex-row justify-between items-center shadow-xl rounded-lg mx-4 lg:mx-0"
       style={{ background: bg }}
       data-aos={dataAos}
-      data-aos-offset="200"
-      data-aos-easing="ease-in-sine"
-      data-aos-duration="1000"
+			// data-aos-offset="200"
+			// data-aos-easing="ease-in-sine"
+			// data-aos-duration="1000"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
     >
       <div className="letter">
         <h5 className="text-lg text-[#918BAE]">{category}</h5>

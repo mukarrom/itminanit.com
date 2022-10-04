@@ -16,14 +16,27 @@ function HeroCard() {
       </div>
       <div className="space-y-10 text-center lg:text-left">
         <div className="space-y-4">
-          <h1 className="text-[calc(1.375rem+2vw)] leading-10 text-pink font-extrabold">
+          <h1
+            className="text-[calc(1.375rem+2vw)] leading-10 text-pink font-extrabold"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Creative
           </h1>
-          <h1 className="text-[calc(1.375rem+2vw)] leading-10 font-extrabold">
+          <h1
+            className="text-[calc(1.375rem+2vw)] leading-10 font-extrabold"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             Digital Agency
           </h1>
         </div>
-        <p className="max-w-lg text-center lg:text-justify">
+        <p
+          className="max-w-lg text-center lg:text-justify"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
           voluptatem adipisci, molestias repudiandae officiis odio illo quasi
           fugit.
@@ -32,6 +45,9 @@ function HeroCard() {
           <button
             type="button"
             className="py-3 px-8 bg-[#03a9f5] rounded-full hover:bg-white hover:text-black"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="800"
           >
             Learn More
           </button>
