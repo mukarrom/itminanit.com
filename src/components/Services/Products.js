@@ -31,26 +31,26 @@ function Products() {
             name="Eduman"
             heading="এডুম্যান সফটওয়্যারে আস্থা রেখেছে ৫০০০+ স্কুল-কলেজ, ৫০০০০ শিক্ষক,
                 ২০ লক্ষ+ শিক্ষার্থী ও অভিভাবকগণ।"
-            aos="fade-down"
+            aos="zoom-in-right"
           />
           <ProductCard
             img={product2}
             name="Admisia"
             heading="শিক্ষা প্রতিষ্ঠানের জন্য অনলাইন এডমিশনের একটি কমপ্লিট সলিউশন দিচ্ছে এডমিশিয়া ওয়েব সফটওয়্যার। সংযোজন করা যাবে প্রতিষ্ঠানের ওয়েবসাইটে।"
-            aos="fade-left"
+            aos="zoom-in-left"
           />
           <ProductCard
             img={product3}
             name="Dynamic Website"
             heading="কোন প্রকার কোডিং জ্ঞান ছাড়াই তথ্য আপডেট রাখার সুবিধা সহ শিক্ষা প্রতিষ্ঠান কিংবা ব্যবসা প্রতিষ্ঠানের জন্য আমরা দিচ্ছি ডায়নামিক/স্ট্যাটিক ওয়েবসাইট।"
-            aos="fade-right"
+            aos="zoom-in-right"
           />
           <ProductCard
             img={product4}
             name="Attendance Device"
             heading="
 প্রচলিত ডিভাইস নির্ভর এডেন্টেন্সের ঝক্কি-ঝামেলা সীমাহীন, শিক্ষার্থী-শিক্ষকগণ পাবেন এবার নতুন এক্সপেরিয়েন্স।"
-            aos="fade-up"
+            aos="zoom-in-left"
           />
         </div>
       </div>
