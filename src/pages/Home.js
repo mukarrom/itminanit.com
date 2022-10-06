@@ -6,6 +6,7 @@ import Products from '../components/Services/Products';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import WhyChoseUs from '../components/WhyChoseUs/WhyChoseUs';
+// import TodoList from '../components/Test/TodoList';
 
 function Home() {
   return (
@@ -13,6 +14,9 @@ function Home() {
       <header className="" id="home">
         <Banner />
       </header>
+      {/* <section>
+        <TodoList />
+      </section> */}
       <section className="w-10/12 mx-auto" id="about">
         <About />
       </section>

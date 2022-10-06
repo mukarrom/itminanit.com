@@ -25,7 +25,7 @@ function Banner() {
         <div
           className={
 						scrolling
-						  ? 'px-4 z-[1000] fixed top-0 w-full gradient-bg2 transition-all ease-in-out duration-1000'
+						  ? 'px-4 z-[1000] fixed top-0 w-full gradient-bg2 transition-nav'
 						  : 'mt-10 px-4 z-[1000] relative w-full transition-all ease-in-out duration-1000'
 					}
         >

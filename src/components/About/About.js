@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import TextTransition, { presets } from 'react-text-transition';
 import vector2 from '../../assets/vector/vector-art-2.png';
 
+const TEXTS = ['designs', 'ideas', 'works'];
+
 function About() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      // eslint-disable-next-line no-shadow
+      () => setIndex((index) => index + 1),
+      3000, // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+  // console.log(index % TEXTS.length);
   return (
     <section className="text-gray-600 body-font min-h-screen">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -27,7 +41,14 @@ function About() {
             data-aos-delay="200"
             data-aos-duration="400"
           >
-            We are making design better for everyone
+            {/* text cange animation library: https://www.npmjs.com/package/react-text-transition */}
+            We are making
+            {' '}
+            <TextTransition inline springConfig={{ mass: 1, tension: 170, friction: 26 }}>
+              {TEXTS[index % TEXTS.length]}
+            </TextTransition>
+            {' '}
+            better for everyone
           </h1>
           <p
             className="my-10"

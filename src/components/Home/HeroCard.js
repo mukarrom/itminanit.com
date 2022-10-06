@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import vector1 from '../../assets/vector/vector-art-1.png';
+import './Banner.css';
 
 function HeroCard() {
   return (
@@ -17,18 +18,18 @@ function HeroCard() {
       <div className="space-y-10 text-center lg:text-left">
         <div className="space-y-4">
           <h1
-            className="text-[calc(1.375rem+2vw)] leading-10 text-pink font-extrabold"
+            className="text-[calc(1.375rem+2vw)] leading-10 text-pink font-extrabold creative-animate"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Creative
+            {' '}
           </h1>
           <h1
-            className="text-[calc(1.375rem+2vw)] leading-10 font-extrabold"
+            className="text-[calc(1.375rem+2vw)] leading-10 font-extrabold ki-animate"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
-            Digital Agency
+            Khidma IT
           </h1>
         </div>
         <p

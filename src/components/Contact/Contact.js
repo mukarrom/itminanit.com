@@ -3,14 +3,13 @@ import img from '../../assets/contact/hellopic.png';
 
 function Contact() {
   return (
-    <div
-      className="bg-contact py-36"
-      data-aos="fade-right"
-      data-aos-duration="1000"
-      data-aos-delay="500"
-    >
+    <div className="bg-contact py-36">
       <div className="font-[Poppins]  mx-auto py-24 xl:max-w-6xl bg-[#effefd] grid grid-cols-1 lg:grid-cols-2 p-10">
-        <div className="right">
+        <div
+          className="right"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
           <div className="heading">
             <p className="text-[#e63cba] text-base uppercase">Contact Now</p>
             <h1 className="h1 text-[#050748] font-bold">
@@ -82,7 +81,12 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="img flex items-center">
+        <div
+          className="img flex items-center"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
           <img src={img} alt="" />
         </div>
       </div>

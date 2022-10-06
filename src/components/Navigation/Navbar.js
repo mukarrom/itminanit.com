@@ -27,8 +27,9 @@ export default function Navbar() {
 				  : { boxShadow: '0 2px 2px 2px rgba(9, 9, 9, 0.23)' }
 			}
     >
-      <a href="/" className="brand-name text-xl ml-4">
+      <a href="/" className="brand-name text-xl ml-4 logo-animate" data-text="Khidma-it">
         Khidma IT
+        {' '}
       </a>
       <button
         className="hamburger"
@@ -59,7 +60,7 @@ export default function Navbar() {
         >
           {items.map((item, i) => (
             // eslint-disable-next-line react/no-array-index-key
-            <li className="nav-list-style" key={i}>
+            <li className="nav-list-style mdMax:shadow-2xl" key={i}>
               <a
                 href={`#${item.link}`}
                 className={`nav-anchor-style ${
