@@ -9,7 +9,7 @@ function ProductCard({
       data-aos={aos}
       data-aos-offset="200"
       data-aos-easing="ease-in-sine"
-      data-aos-duration="1000"
+      data-aos-duration="500"
     >
       <div className="bg-[#dcddf9]">
         <img

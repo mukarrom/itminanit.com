@@ -96,7 +96,18 @@
 	.transition-w-1 {
 		transition: width 1s;
 	}
-	
+	@keyframes my-anime {
+		0% {
+			transform: translateY(-50px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
+	}
+	.transition-nav {
+		animation: my-anime 1000ms 1;
+	}
+
 	/* 
 	blue: '#007bff',
 	indigo: '#6610f2',

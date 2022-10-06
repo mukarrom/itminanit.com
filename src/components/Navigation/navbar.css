@@ -1,17 +1,50 @@
 .navigation {
 	@apply h-[60px] w-full flex items-center relative py-2 px-0;
 }
-.hamburger {
-    @apply border-0 h-10 w-10 p-2 rounded-[50%] bg-[#283b8b] cursor-pointer absolute top-1/2 right-[25px] -translate-y-1/2 hidden hover:bg-[#2642af] mdMax:block
+.logo-animate {
+	position: relative;
+	font-weight: 900;
+	color: #365df1;
+	-webkit-text-stroke: 0.1vw #6c707c;
 }
-.navigation-menu>ul {
-    @apply p-0 mdMax:absolute mdMax:top-[60px] mdMax:left-0 mdMax:flex-col mdMax:w-full mdMax:h-auto mdMax:bg-white mdMax:border-t mdMax:border-solid mdMax:border-t-black
+.logo-animate::after {
+	content: ".";
+}
+.logo-animate::before {
+	content: "Khidma IT ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	color: aqua;
+	-webkit-text-stroke: rgb(236, 93, 22);
+	border-right: 4px solid aqua;
+	overflow: hidden;
+	animation: KI-animate 6s linear infinite;
+}
+@keyframes KI-animate {
+	0%,
+	10%,
+	100% {
+		width: 0%;
+	}
+	70%,
+	90% {
+		width: 100%;
+	}
+}
+.hamburger {
+	@apply border-0 h-10 w-10 p-2 rounded-[50%] bg-[#283b8b] cursor-pointer absolute top-1/2 right-[25px] -translate-y-1/2 hidden hover:bg-[#2642af] mdMax:block;
+}
+.navigation-menu > ul {
+	@apply p-0 mdMax:absolute mdMax:top-[60px] mdMax:left-0 mdMax:flex-col mdMax:w-full mdMax:h-auto mdMax:border-t mdMax:border-solid mdMax:border-t-black mdMax:bg-gradient-to-r from-[#7004BC] to-[#375DF1] mdMax:text-white shadow-2xl;
 }
 .nav-list-style {
-	@apply my-0 mx-4 mdMax:text-center mdMax:m-0 mdMax:hover:bg-[#eee];
+	@apply my-0 mx-4 mdMax:text-center mdMax:m-0  mdMax:hover:bg-[#eee];
 }
 .nav-anchor-style {
-	@apply block w-full mdMax:text-black mdMax:w-full mdMax:py-6 mdMax:px-0 after:block after:w-0 after:h-[2px] after:bg-white hover:after:w-full hover:after:transition-w-1;
+	@apply block w-full mdMax:hover:text-black mdMax:w-full mdMax:py-6 mdMax:px-0 after:block after:w-0 after:h-[2px] mdMax:after:bg-gradient-to-r from-[#7004BC] to-[#375DF1] after:bg-[#4ef05b] hover:after:w-full hover:after:transition-w-1;
 }
 .m-active {
 	@apply font-bold after:w-full after:h-[2px] after:block after:bg-white;
