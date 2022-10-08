@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
+@import url('https://fonts.maateen.me/charu-chandan-3d/font.css');
+@import url('https://fonts.maateen.me/charu-chandan-hard-stroke/font.css');
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+@import url('https://fonts.maateen.me/charukola-ultra-light/font.css');
+@import url('https://fonts.maateen.me/apona-lohit/font.css');
+
+.font-3d {
+  font-family: 'CharuChandan3D', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-kalpurush {
+  font-family: 'Kalpurush', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-hard {
+font-family: 'CharuChandanHardStroke', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font-charukola {
+font-family: 'CharukolaUltraLight', sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.font-apona {
+font-family: 'AponaLohit', sans-serif;
 }

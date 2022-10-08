@@ -1,4 +1,4 @@
-@keyframes creativeText {
+/* @keyframes creativeText {
 	0% {
 		content: '|';
 	}
@@ -37,7 +37,6 @@
 	content: '';
 	top: 0;
 	right: 0;
-	/* animation: banner 5000ms ease-in-out infinite alternate; */
     animation-name: creativeText;
     animation-duration: 3000ms;
     animation-iteration-count: infinite;
@@ -45,7 +44,7 @@
     animation-timing-function: ease-in-out;
     animation-delay: 2000ms;
 	
-}
+} */
 /* 
 .ki-animate {
 	height: 100%;

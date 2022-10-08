@@ -6,18 +6,42 @@ import product4 from '../../assets/service/picture-Attendance-1024x575.png';
 import ProductCard from './ProductCard';
 
 function Products() {
+  const admissionFormList = [
+    'সহজ ও দ্রুত ভর্তি/জয়েন করা',
+    'প্রয়োজনীয় সকল অপশনে তথ্য অটো সেট হওয়া',
+    'ভর্তি তালিকা থেকে সহজে তথ্য বের করা',
+    'ভর্তি ম্যাসেজ পাঠানো',
+    'প্রিন্ট করা',
+    'অটোম্যাটিক সংক্ষিপ্ত রিপোর্ট তৈরি হওয়া',
+  ];
+  const haziraList = [
+    'ফিঙ্গারপ্রিন্ট, কার্ড , বায়োমেট্রিক বা মোবাইলের মাধ্যমে হাজিরা নেয়া',
+    'হাজিরা দেয়ার সাথে সাথে রিয়েল টাইম (লাইভ ) রিপোর্ট দেখার সুবিধা',
+    'মোট  উপস্থিত সংখ্যা, শতকরা, অনুপস্থিত সংখ্যা, শতকরা , জরিমানা টাকা রিপোর্ট',
+    'হাজিরা মেসেজ পাঠানো',
+    'দৈনিক , মাসিক, বাৎসরিক রিপোর্ট ',
+  ];
+  const resultList = [
+    'সহজ ও দ্রুততম পদ্ধতিতে রেজাল্ট তৈরী করা',
+    'রেজাল্ট অটো ক্যালকুলেশন করা',
+    'রেজাল্ট রেঙ্কিং করা',
+    'রেজাল্ট অটো রিপোর্ট তৈরী হওয়া ',
+    'অনলাইনে রেজাল্ট অটো পাবলিশ হওয়া ',
+    'রেজাল্ট তথ্য ফিল্টার করা',
+  ];
+
   return (
-    <section className="w-full font-Poppins">
+    <section className="w-full font-Poppins font-kalpurush">
       <div className="container font-[Poppins]  mx-auto py-24 xl:max-w-6xl">
         <div className=" text-center">
           <h1
-            className="h1 text-[#3b224e] font-bold font-anek"
+            className="h1 text-[#3b224e] font-bold font-kalpurush"
             data-aos="zoom-in-up"
           >
             আমাদের পণ্য-সেবা
           </h1>
           <p
-            className="uppercase text-pink text-lg mb-20 font-tiro"
+            className="uppercase text-pink text-lg mb-20 font-kalpurush"
             data-aos="zoom-in-right"
             data-aos-delay="200"
           >
@@ -28,28 +52,30 @@ function Products() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center sm:gap-x-4 lg:gap-x-2 gap-y-8">
           <ProductCard
             img={product1}
-            name="Eduman"
-            heading="এডুম্যান সফটওয়্যারে আস্থা রেখেছে ৫০০০+ স্কুল-কলেজ, ৫০০০০ শিক্ষক,
-                ২০ লক্ষ+ শিক্ষার্থী ও অভিভাবকগণ।"
+            name="ভর্তি ফরম"
+            heading="(শিক্ষার্থী, শিক্ষক, কর্মচারী)"
+            list={admissionFormList}
             aos="zoom-in-right"
           />
           <ProductCard
             img={product2}
-            name="Admisia"
-            heading="শিক্ষা প্রতিষ্ঠানের জন্য অনলাইন এডমিশনের একটি কমপ্লিট সলিউশন দিচ্ছে এডমিশিয়া ওয়েব সফটওয়্যার। সংযোজন করা যাবে প্রতিষ্ঠানের ওয়েবসাইটে।"
-            aos="zoom-in-left"
+            name="হাজিরা"
+						// heading="(শিক্ষার্থী, শিক্ষক, কর্মচারী)"
+            list={haziraList}
+            aos="zoom-in-right"
           />
           <ProductCard
             img={product3}
-            name="Dynamic Website"
-            heading="কোন প্রকার কোডিং জ্ঞান ছাড়াই তথ্য আপডেট রাখার সুবিধা সহ শিক্ষা প্রতিষ্ঠান কিংবা ব্যবসা প্রতিষ্ঠানের জন্য আমরা দিচ্ছি ডায়নামিক/স্ট্যাটিক ওয়েবসাইট।"
+            name="রেজাল্ট"
+						// heading=""
+            list={resultList}
             aos="zoom-in-right"
           />
           <ProductCard
             img={product4}
-            name="Attendance Device"
-            heading="
-প্রচলিত ডিভাইস নির্ভর এডেন্টেন্সের ঝক্কি-ঝামেলা সীমাহীন, শিক্ষার্থী-শিক্ষকগণ পাবেন এবার নতুন এক্সপেরিয়েন্স।"
+            name="হাজিরা"
+						// heading="(শিক্ষার্থী, শিক্ষক, কর্মচারী)"
+            list={haziraList}
             aos="zoom-in-left"
           />
         </div>
