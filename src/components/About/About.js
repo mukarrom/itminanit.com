@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 import vector2 from '../../assets/vector/vector-art-2.png';
 
-const TEXTS = ['designs', 'ideas', 'works'];
+const TEXTS = ['সফ্টওয়ার', 'ওয়েবসাইট'];
 
 function About() {
   const [index, setIndex] = useState(0);
@@ -36,19 +36,17 @@ function About() {
             We are magaone company
           </p>
           <h1
-            className="h1"
+            className="h1 font-kalpurush"
             data-aos="fade-down"
             data-aos-delay="200"
             data-aos-duration="400"
           >
             {/* text cange animation library: https://www.npmjs.com/package/react-text-transition */}
-            We are making
+            আপনাদের প্রতিষ্ঠানের জন্য আমরা তৈরি করছি আকর্ষনীয়
             {' '}
-            <TextTransition inline springConfig={{ mass: 1, tension: 170, friction: 26 }}>
+            <TextTransition inline springConfig={presets.gentle}>
               {TEXTS[index % TEXTS.length]}
             </TextTransition>
-            {' '}
-            better for everyone
           </h1>
           <p
             className="my-10"

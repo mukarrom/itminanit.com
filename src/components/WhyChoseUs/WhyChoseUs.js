@@ -2,24 +2,26 @@ import React from 'react';
 
 function WhyChoseUs() {
   const arr = [
-    'login System',
-    'login System',
-    'login System',
-    'login System',
-    'login System',
-    'login System',
+    'ডিজিটাল ভর্তি ফরম',
+    'বেতনের হিসাব',
+    'নোটিশ সিস্টেম',
+    'রেজাল্ট সিস্টেম',
+    'ডিজিটাল হাজিরা',
+    'হিসাব ম্যানেজমেন্ট',
+    'ইউজার সিস্টেম',
+    'ড্যাশাবোর্ড',
   ];
   return (
     <section className="text-gray-600 body-font bg-white">
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
           <h1
-            className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+            className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4 font-anek"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="500"
           >
-            Raw Denim Heirloom Man Braid
+            কেন আমাদের সফটওয়্যার ব্যবহার করবেন?
           </h1>
           <p
             className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto"
@@ -27,14 +29,13 @@ function WhyChoseUs() {
             data-aos-duration="500"
             data-aos-delay="100"
           >
-            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
-            pug.
+            আপনাদের কাজকে আরো সহজ করতে  আমাদের সফটওয়্যারে রয়েছে আকর্ষনীয় সব ফিচারস
           </p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          {arr.map((item) => (
+          {arr.map((item, index) => (
             <div
+              key={index}
               className="p-2 sm:w-1/2 w-full"
               data-aos="flip-up"
               data-aos-duration="1000"
@@ -53,8 +54,8 @@ function WhyChoseUs() {
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                   <path d="M22 4L12 14.01l-3-3" />
                 </svg>
-                <span className="title-font font-medium">
-                  Authentic Cliche Forage
+                <span className="title-font font-medium font-tiro">
+                  {item}
                 </span>
               </div>
             </div>

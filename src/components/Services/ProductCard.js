@@ -1,11 +1,11 @@
 import React from 'react';
 
 function ProductCard({
-  img, name, heading, aos,
+  img, name, list, heading, aos,
 }) {
   return (
     <div
-      className="card font-tiro rounded-md bg-[#f7f7f7] shadow-xl mx-[10vw] sm:mx-0 pb-12"
+      className="card font-tiro rounded-md bg-[#f7f7f7] shadow-xl mx-[10vw] sm:mx-0 pb-12 font-kalpurush"
       data-aos={aos}
       data-aos-offset="200"
       data-aos-easing="ease-in-sine"
@@ -20,9 +20,15 @@ function ProductCard({
       </div>
       <div className="px-6 py-8 flex flex-col justify-center items-center bg-[#f7f7d9]">
         <h2 className="h3 text-center text-[#55595c]">{name}</h2>
-        <p className="text-center my-4 text-lg text-[rgb(85,89,92)]">
+        <p className="text-center text-sm text-[rgb(85,89,92)]">
           {heading}
         </p>
+        <ul className="list-disc">
+          {list?.map((a) => (
+            <li className="">{a}</li>
+          ))}
+
+        </ul>
       </div>
       <div className="absolute bottom-0 w-full flex justify-center mb-8">
         <button
