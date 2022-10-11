@@ -29,6 +29,11 @@ function Products() {
     'অনলাইনে রেজাল্ট অটো পাবলিশ হওয়া ',
     'রেজাল্ট তথ্য ফিল্টার করা',
   ];
+  // সুবিধা
+  const salaryList = [
+    'অনেক সহজে দ্রুত বেতন জমা করা ',
+    'শিক্ষার্থীর রোল/আইডি/মোবাইল নম্বর দিয়ে তথ্য বের করা। সেই সাথে অটো রিপোর্ট চলে  আসা  ',
+  ];
 
   return (
     <section className="w-full font-Poppins font-kalpurush">
@@ -59,9 +64,9 @@ function Products() {
           />
           <ProductCard
             img={product2}
-            name="হাজিরা"
+            name="বেতন সিস্টেম"
 						// heading="(শিক্ষার্থী, শিক্ষক, কর্মচারী)"
-            list={haziraList}
+            list={salaryList}
             aos="zoom-in-right"
           />
           <ProductCard

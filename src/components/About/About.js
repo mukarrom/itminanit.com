@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 import vector2 from '../../assets/vector/vector-art-2.png';
 
-const TEXTS = ['সফ্টওয়ার', 'ওয়েবসাইট'];
+const TEXTS = ['সফটওয়্যার', 'ওয়েবসাইট'];
 
 function About() {
   const [index, setIndex] = useState(0);
