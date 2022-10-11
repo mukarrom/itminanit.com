@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import NavItems from './NavItems';
 import './navbar.css';
+// import logo from '%PUBLIC_URL%/logo.pn';
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -27,9 +28,13 @@ export default function Navbar() {
 				  : { boxShadow: '0 2px 2px 2px rgba(9, 9, 9, 0.23)' }
 			}
     >
-      <a href="/" className="brand-name text-xl ml-4 logo-animate" data-text="Khidma-it">
-        Khidma IT
-        {' '}
+      <img src="logo" alt="" className="w-24 h-16 rounded" />
+      <a
+        href="/"
+        className="brand-name text-xl ml-4 logo-animate font-3d"
+        data-text="Khidma-it"
+      >
+        <span className="opacity-0">খিদমা_আইটি</span>
       </a>
       <button
         className="hamburger"

@@ -43,7 +43,7 @@ function Footer() {
                   <span className="font-black text-lg">Email</span>
                   <br />
                   <span>
-                    <a href="mailto:info@businessname.com" className="">
+                    <a href="mailto:info@khidmait.com" className="">
                       info@khidmait.com
                     </a>
                   </span>
@@ -58,8 +58,8 @@ function Footer() {
                   <span className="font-black text-lg">Phone</span>
                   <br />
                   <span>
-                    <a href="tel:+10000000000" className="">
-                      +880 19 000 000
+                    <a href="tel:+8809611496850" className="">
+                      +8809611496850
                     </a>
                   </span>
                 </p>
@@ -74,7 +74,7 @@ function Footer() {
                   <br />
                   <span className="">
                     {' '}
-                    2350 Bhairab, Kishoreganj, Dhaka, Bangladesh
+                    Bhairabpur 2350, Bhairab, Kishoreganj, Dhaka, Bangladesh
                   </span>
                 </p>
               </li>
@@ -120,7 +120,9 @@ function Footer() {
           {/* End Company */}
           {/* -------> Latest Blogs <------ */}
           <div className="flex flex-col justify-start items-center md:items-baseline">
-            <h3 className="h3 text-[#051359] font-semibold mb-6">Latest Blogs</h3>
+            <h3 className="h3 text-[#051359] font-semibold mb-6">
+              Latest Blogs
+            </h3>
             <div className="inline-flex gap-x-4">
               <div className="post-thumb">
                 <Link to="/" className="">
@@ -134,7 +136,11 @@ function Footer() {
                     April 15, 2020
                   </span>
                 </p>
-                <h4 className="h5"><Link to="/">We Provide you Best &amp; Creative Consulting Service</Link></h4>
+                <h4 className="h5">
+                  <Link to="/">
+                    We Provide you Best &amp; Creative Consulting Service
+                  </Link>
+                </h4>
               </div>
             </div>
           </div>
