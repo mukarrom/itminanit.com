@@ -1,22 +1,20 @@
 import React from 'react';
-import Banner from '../components/Home/Banner';
+// import Banner from '../components/Home/Banner';
 import About from '../components/About/About';
 import Services from '../components/Services/Services';
 import Products from '../components/Services/Products';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import WhyChoseUs from '../components/WhyChoseUs/WhyChoseUs';
-// import TodoList from '../components/Test/TodoList';
+import Test from '../test/Test';
 
 function Home() {
   return (
-    <div>
+    <div className="z-10 relative">
       <header className="" id="home">
-        <Banner />
+        {/* <Banner /> */}
+        <Test />
       </header>
-      {/* <section>
-        <TodoList />
-      </section> */}
       <section className="w-10/12 mx-auto" id="about">
         <About />
       </section>
