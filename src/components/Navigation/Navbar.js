@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="navigation"
+      className="navigation text-white"
       style={
 				scrolling
 				  ? { boxShadow: 'none' }

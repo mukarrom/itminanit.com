@@ -1,11 +1,36 @@
+import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AOS from 'aos';
 import Home from './pages/Home';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Navbar from './components/Navigation/Navbar';
+// import Test from './test/Test';
 
 function App() {
+  const [scrolling, setScrolling] = useState(false);
+  useEffect(() => {
+    const scrollEvent = () => {
+      if (window.scrollY >= 150) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener('scroll', scrollEvent);
+  }, []);
+  AOS.init();
   return (
     <div>
+      <div
+        className={
+					scrolling
+					  ? 'block fixed top-0 w-full gradient-bg2 transition-nav z-50'
+					  : 'hidden'
+				}
+      >
+        <Navbar />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
