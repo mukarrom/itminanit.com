@@ -28,7 +28,7 @@ export default function Navbar() {
 				  : { boxShadow: '0 2px 2px 2px rgba(9, 9, 9, 0.23)' }
 			}
     >
-      {/* <img src="logo" alt="" className="w-24 h-16 rounded" /> */}
+      <img src={scrolling ? '4.png' : '3.png'} alt="" className="w-[60px] h-16 rounded" />
       <a
         href="/"
         className="brand-name text-xl ml-4 logo-animate font-3d"
@@ -60,7 +60,6 @@ export default function Navbar() {
       </button>
       <div className="navigation-menu ml-auto">
         <ul
-					// style={isNavExpanded ? { display: 'block' } : { display: 'hide' }}
           className={`flex ${isNavExpanded ? 'mdMax:flex' : 'mdMax:hidden'}`}
         >
           {items.map((item, i) => (
