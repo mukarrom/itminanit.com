@@ -11,12 +11,11 @@ function Test() {
       </div>
       <div className="wrap-banner flex flex-col md:flex-row items-center justify-between w:full lg:w-3/4 mb-16">
         <motion.div
-          animate={{ x: [30, -10, 30] }}
+          animate={{ x: [30, 0, 30] }}
           transition={{ repeat: Infinity, duration: 10 }}
-          spring
-          className="banner-image w-full lg:w-1/2 flex justify-center"
+          className="banner-image w-8/12 lg:w-1/2 flex justify-center"
         >
-          <img src={vector1} alt="Banner" className="w-[18em]" />
+          <img src={vector1} alt="Banner" className="w-full" />
         </motion.div>
         <div className="text-white w-full lg:w-1/2 px-4 mdMax:mt-16">
           <h5 className="text-center md:text-start text-xl  text-[#F02EB5] font-semibold creative-animate">

@@ -9,16 +9,16 @@ import Navbar from './components/Navigation/Navbar';
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
-  useEffect(() => {
-    const scrollEvent = () => {
-      if (window.scrollY >= 150) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-    window.addEventListener('scroll', scrollEvent);
-  }, []);
+  // useEffect(() => {
+  const scrollEvent = () => {
+    if (window.scrollY >= 150) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+  window.addEventListener('scroll', scrollEvent);
+  // }, []);
   AOS.init();
   return (
     <div>
