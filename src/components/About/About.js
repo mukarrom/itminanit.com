@@ -20,7 +20,7 @@ function About() {
     <section className="text-gray-600 body-font min-h-screen">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div
-          className=""
+          className="w-full"
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
@@ -33,10 +33,10 @@ function About() {
             data-aos-easing="ease-in-sine"
             data-aos-duration="700"
           >
-            We are magaone company
+            We are trusted company
           </p>
           <h1
-            className="h1 font-kalpurush"
+            className="h2 font-bold font-kalpurush text-[#3363f4]"
             data-aos="fade-down"
             data-aos-delay="200"
             data-aos-duration="400"
@@ -45,21 +45,34 @@ function About() {
             আপনাদের প্রতিষ্ঠানের জন্য আমরা তৈরি করছি আকর্ষনীয়
             {' '}
             <TextTransition inline springConfig={presets.gentle}>
-              {TEXTS[index % TEXTS.length]}
+              <span className="text-[#7004bc]">
+                {TEXTS[index % TEXTS.length]}
+              </span>
             </TextTransition>
           </h1>
           <p
-            className="my-10"
+            className="mb-5 font-kalpurush"
             data-aos="zoom-in"
             data-aos-delay="600"
             data-aos-duration="500"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore
-            reiciendis obcaecati. Mollitia eaque, doloremque quos in quasi quis,
-            quas, molestias assumenda placeat temporibus ad accusamus! Quo
-            tempora qui amet!
+            <span className="text-[#7004bc]">খিদমা আইটি</span>
+            {' '}
+            বাংলাদেশের একটি
+            শীর্ষস্থানীয় সফটওয়্যার এবং আইটি সেবা প্রদানকারী কোম্পানি। ২০২০ সাল
+            {' '}
+            <span className="text-[#7004bc]">খিদমা আইটি</span>
+            {' '}
+            থেকে, সফলভাবে
+            প্রচুর প্রকল্প সম্পন্ন করেছে। আমরা বিশেষভাবে শিক্ষা ব্যবস্থাপনা,
+            অ্যাকাউন্ট ম্যানেজমেন্ট, ফার্মেসি ম্যানেজমেন্ট, ইনভেন্টরি
+            ম্যানেজমেন্ট ইত্যাদির মতো ম্যানেজমেন্ট সফটওয়্যারের জন্য কাজ করি।
+            আমরা সর্বোচ্চ ভালো মানের সেবা পদান করি যাতে সফ্টওয়্যার, ওয়েবসাইট, পরামর্শ, প্রশিক্ষণ এবং বাস্তবায়ন ও সকল প্রকার সহযোগীতা অন্তর্ভুক্ত থাকে। আধুনিক প্রযুক্তির যুগে সর্বোচ্চ নিরাপত্তা ও
+            বৈশ্বিক মান বজায় রেখে সফটওয়্যার এবং ওয়েবসাইট তৈরি করা এবং সাইবার সিকিউরিটি প্রদান করা এই কোম্পানির
+            প্রধান কাজ। গ্রাহকদের সন্তুষ্টিই আমাদের মূল লক্ষ্য। তাই আমরা ঝামেলামুক্ত ও সহজে বোধগম্য সিস্টেম প্রদান করি। আমরা সর্বোত্তম মূল্যের
+            সাথে সর্বোত্তম গুণমান নিশ্চিত করি।
           </p>
-          <div className="">
+          {/* <div className="">
             <button
               data-aos="zoom-out-right"
               data-aos-delay="500"
@@ -69,7 +82,7 @@ function About() {
             >
               Learn More
             </button>
-          </div>
+          </div> */}
         </div>
         <div
           className=""
@@ -79,7 +92,7 @@ function About() {
           data-aos-duration="1000"
         >
           <img
-            className="object-cover object-center w-[115vw]"
+            className="object-cover object-center w-[100vw]"
             alt="hero"
             src={vector2}
           />

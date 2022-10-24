@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import './Test.css';
-import vector1 from '../assets/vector/vector-art-1.png';
-import Navbar from '../components/Navigation/Navbar';
+import './Landing.css';
+import vector1 from '../../assets/vector/vector-art-1.png';
+import Navbar from '../Navigation/Navbar';
 
 function Test() {
   return (
@@ -9,16 +9,16 @@ function Test() {
       <div className="w-full mt-10 px-4 transition-all ease-in-out duration-1000">
         <Navbar />
       </div>
-      <div className="wrap-banner flex flex-col md:flex-row items-center justify-between w:full lg:w-3/4 mb-16">
+      <div className="wrap-banner flex flex-col items-start justify-center md:flex-row  md:items-center md:justify-between w:full lg:w-3/4 mb-16">
         <motion.div
-          animate={{ x: [30, 0, 30] }}
+          animate={{ x: [100, 50, 100] }}
           transition={{ repeat: Infinity, duration: 10 }}
-          className="banner-image w-8/12 lg:w-1/2 flex justify-center"
+          className="banner-image w-8/12 lg:w-1/3 flex justify-center lg:justify-end"
         >
           <img src={vector1} alt="Banner" className="w-full" />
         </motion.div>
         <div className="text-white w-full lg:w-1/2 px-4 mdMax:mt-16">
-          <h5 className="text-center md:text-start text-xl  text-[#F02EB5] font-semibold creative-animate">
+          <h5 className="text-center md:text-start text-xl  text-[#F02EB5] font-semibold creative-animate mb-12">
             A Trusted Company
           </h5>
           <h2
@@ -39,7 +39,7 @@ function Test() {
             তাই এই প্রযুক্তির যুগে আপনাদের জীবনকে আরো সুন্দর এবং সহজ করার জন্য
             আমরা নিয়ে এসেছি ডাইনামিক পদ্বতির ম্যানেজমেন্ট সফটওয়্যার এবং
             ওয়েবসাইট, যা ব্যবহার করে আপনাদের দৈনন্দিন জীবনের বিভিন্ন ধরনের হিসাব
-            নিকাশ, আয়-ব্যয়সহ শিক্ষাখাত আরো সমৃদ্ধ হবে। যার ফলে সকল প্রকার কাজ
+            নিকাশ, আয়-ব্যয়সহ শিক্ষাখাত আরো সমৃদ্ধ হবে। ফলে সকল প্রকার কাজ
             দ্রুততম সময়ে করা যাবে, যেকোন সময়ে, যেকোন স্থান থেকে।
           </p>
           <div className="flex justify-center lg:justify-start">

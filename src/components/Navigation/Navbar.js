@@ -28,7 +28,13 @@ export default function Navbar() {
 				  : { boxShadow: '0 2px 2px 2px rgba(9, 9, 9, 0.23)' }
 			}
     >
-      <img src={scrolling ? '4.png' : '3.png'} alt="" className="w-[60px] h-16 rounded" />
+      <a href="/" className="px-4">
+        <img
+          src={scrolling ? '4.png' : '3.png'}
+          alt=""
+          className="w-[60px] h-[60px] rounded"
+        />
+      </a>
       <a
         href="/"
         className="brand-name text-xl ml-4 logo-animate font-3d"
@@ -59,9 +65,7 @@ export default function Navbar() {
         </svg>
       </button>
       <div className="navigation-menu ml-auto">
-        <ul
-          className={`flex ${isNavExpanded ? 'mdMax:flex' : 'mdMax:hidden'}`}
-        >
+        <ul className={`flex ${isNavExpanded ? 'mdMax:flex' : 'mdMax:hidden'}`}>
           {items.map((item, i) => (
             // eslint-disable-next-line react/no-array-index-key
             <li className="nav-list-style mdMax:shadow-2xl" key={i}>

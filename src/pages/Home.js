@@ -6,14 +6,14 @@ import Products from '../components/Services/Products';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import WhyChoseUs from '../components/WhyChoseUs/WhyChoseUs';
-import Test from '../test/Test';
+import Landing from '../components/Landing/Landing';
 
 function Home() {
   return (
     <div className="z-10 relative">
       <header className="" id="home">
         {/* <Banner /> */}
-        <Test />
+        <Landing />
       </header>
       <section className="w-10/12 mx-auto" id="about">
         <About />
