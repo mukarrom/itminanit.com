@@ -12,14 +12,14 @@ function Footer() {
       data-aos-duration="600"
     >
       <div className="wrapper font-[Poppins]  mx-auto pt-24 xl:max-w-6xl">
-        <footer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 lg:gap-y-0 px-4 mb-10 justify-evenly text-base-content">
+        <footer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 lg:gap-y-0 px-4 md:mx-8 mb-10 justify-evenly text-base-content">
           <div className="flex flex-col justify-start items-start">
-            <h1 className="h1 font-extrabold uppercase text-[#08182b] mb-6">
-              Khidma IT
+            <h1 className="h1 font-extrabold uppercase text-[#3363f4] mb-2 mt-6 font-hard">
+              খিদমা আইটি
             </h1>
-            <p className="p text-[#6a6a8e] mb-6">
-              News letter dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt. Enter your email
+            <p className="p text-[#6a6a8e] mb-6 font-kalpurush text-xl">
+              প্রযুক্তির যুগে আপনার প্রতিষ্ঠানকে আরো এগিয়ে নিতে আমরা আছি আপনার
+              পাশে।
             </p>
             <div className="w-full pr-6">
               <button
@@ -82,9 +82,9 @@ function Footer() {
           </div>
           {/* End Contact Us */}
           {/* -------> Company <------ */}
-          <div className="flex flex-col justify-start items-center md:items-baseline">
+          <div className="flex flex-col justify-start items-center md:items-center">
             <h3 className="h3 text-[#051359] font-semibold mb-6">Company</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 md:ml-16">
               <li>
                 <Link href="/" className="link link-hover text-lg">
                   Contact
@@ -119,14 +119,14 @@ function Footer() {
           </div>
           {/* End Company */}
           {/* -------> Latest Blogs <------ */}
-          <div className="flex flex-col justify-start items-center md:items-baseline">
+          {/* <div className="flex flex-col justify-start items-center md:items-baseline">
             <h3 className="h3 text-[#051359] font-semibold mb-6">
               Latest Blogs
             </h3>
             <div className="inline-flex gap-x-4">
               <div className="post-thumb">
                 <Link to="/" className="">
-                  <img src={blog} alt="blog" className="rounded-xl" />
+                   <img src={blog} alt="blog" className="rounded-xl" />
                 </Link>
               </div>
               <div className="m-0">
@@ -143,7 +143,7 @@ function Footer() {
                 </h4>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* End Blogs */}
         </footer>
         <footer className="footer footer-center p-10 text-base-content rounded">
