@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import PhoneInput, { isPossiblePhoneNumber } from 'react-phone-number-input';
+import PhoneInput from 'react-phone-number-input';
 import img from '../../assets/contact/hellopic.png';
 import 'react-phone-number-input/style.css';
 
