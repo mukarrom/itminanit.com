@@ -8,7 +8,6 @@
 	*::after {
 		box-sizing: border-box;
 	}
-	
 
 	@media (prefers-reduced-motion: no-preference) {
 		:root {
@@ -108,6 +107,7 @@
 	.transition-nav {
 		animation: my-anime 1000ms 1;
 	}
+	
 
 	/* 
 	blue: '#007bff',

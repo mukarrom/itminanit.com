@@ -1,9 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import PhoneInput, { isPossiblePhoneNumber } from 'react-phone-number-input';
 import img from '../../assets/contact/hellopic.png';
+import 'react-phone-number-input/style.css';
 
 function Contact() {
+  const [checked, setChecked] = useState(false);
+  const [disabled, setDisabled] = useState(true);
+  const [value, setValue] = useState(null);
   const form = useRef();
+  const handleOnChange = () => {
+    setChecked(!checked);
+    setDisabled(!disabled);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,7 +28,7 @@ function Contact() {
         (result) => {
           alert('message sent succesfull');
           console.log(result.text);
-          form.reset();
+          e.target.reset();
         },
         (error) => {
           alert('Fail to send');
@@ -43,36 +52,48 @@ function Contact() {
             className="form grid grid-cols-1 md:grid-cols-2 gap-4"
           >
             <input
+              required
               type="text"
-              name="name"
+              name="user_name"
               id=""
               placeholder="Full Name"
               className="input input-md shadow-sm shadow-stone-400"
             />
             <input
-              type="text"
-              name="email"
-              id=""
+              type="email"
+              name="user_email"
+              required
               placeholder="Email Address"
               className="input input-md shadow-sm shadow-stone-400"
             />
-            <input
-              type="tel"
-              name="phone"
-              id=""
-              placeholder="Contact Number"
+            <PhoneInput
+              placeholder="Enter phone number"
+              value={value}
+              onChange={setValue}
+              defaultCountry="BD"
+              name="phoneInput"
+              rules={{ required: true }}
+							// country="BD"
               className="input input-md shadow-sm shadow-stone-400"
             />
+            {/* <input
+              // ref={phone}
+              type="tel"
+              name="phone"
+              required
+              placeholder="Contact Number"
+              className="input input-md shadow-sm shadow-stone-400"
+            /> */}
             <input
               type="text"
               name="subject"
-              id=""
+              required
               placeholder="Subject"
               className="input input-md shadow-sm shadow-stone-400"
             />
             <textarea
               name="message"
-              id=""
+              required
               cols="30"
               rows="5"
               placeholder="Message"
@@ -83,6 +104,9 @@ function Contact() {
               <label className="cursor-pointer label justify-start">
                 <input
                   type="checkbox"
+                  name="checkbox"
+                  checked={checked}
+                  onChange={handleOnChange}
                   className="checkbox checkbox-secondary mr-3"
                 />
                 <span className="label-text">
@@ -97,11 +121,13 @@ function Contact() {
               </label>
             </div>
             <div className="sm:col-span-2">
-              <input
+              <button
                 type="submit"
+                disabled={disabled}
                 className="btn border-0 w-full rounded-full bg-gradient-to-r from-[#ffb584] to-[#ff2d8d]"
-                value="Submit &gt"
-              />
+              >
+                Submit &gt;
+              </button>
             </div>
           </form>
         </div>
