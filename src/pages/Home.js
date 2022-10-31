@@ -1,5 +1,4 @@
 import React from 'react';
-// import Banner from '../components/Home/Banner';
 import About from '../components/About/About';
 import Services from '../components/Services/Services';
 import Products from '../components/Services/Products';
@@ -10,15 +9,14 @@ import Landing from '../components/Landing/Landing';
 
 function Home() {
   return (
-    <div className="z-10 relative">
-      <header className="" id="home">
-        {/* <Banner /> */}
+    <div>
+      <section id="home">
         <Landing />
-      </header>
+      </section>
       <section className="w-10/12 mx-auto" id="about">
         <About />
       </section>
-      <section id="why-chose-us">
+      <section id="why">
         <WhyChoseUs />
       </section>
       <section id="services">

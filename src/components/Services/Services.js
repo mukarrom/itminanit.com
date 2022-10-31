@@ -9,43 +9,53 @@ function Services() {
   return (
     <section className="bg-service-pattern">
       <div className="font-[Poppins]  mx-auto py-24 xl:max-w-6xl">
-        <p className="uppercase text-center text-pink text-lg" data-aos="zoom-in">
+        <p
+          className="uppercase text-center text-pink text-lg"
+          data-aos="zoom-in"
+        >
           Services We're Provided
         </p>
-        <h1 className="h1 text-center text-[#3b224e] font-bold mb-20" data-aos="zoom-in-up">
-          Our Digital Marketing Services
+        <h1
+          className="h1 text-center text-[#3b224e] font-bold mb-20"
+          data-aos="zoom-in-up"
+        >
+          Our Services
         </h1>
-        <div className="card-wrapper grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8">
-          <ServiceCard
-            bg="#e9ddff"
-            category="ppc"
-            heading="Digital Media & PPC Advertising"
-            img={service1}
-            dataAos="flip-right"
-          />
-          <ServiceCard
-            bg="#ffdadb"
-            category="MARKETING"
-            heading="Content Marketing Service"
-            img={service2}
-            dataAos="flip-left"
-          />
+        <div className="card-wrapper grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8 font-kalpurush">
           <ServiceCard
             bg="#d6edff"
-            category="SEO"
-            heading="Search Engine Optimization"
+            category="software"
+            heading="প্রতিষ্ঠান এবং  ইন্ভেন্টরি ম্যানেজমেন্ট সফটওয়্যার"
             img={service3}
             dataAos="flip-right"
           />
           <ServiceCard
+            bg="#e9ddff"
+            category="web"
+            heading="ওয়েবসাইট ডিজাইন এবং ডেভলাপম্যান্ট"
+            img={service1}
+            dataAos="flip-right"
+          />
+          <ServiceCard
             bg="#ffede1"
-            category="ppc"
-            heading="Website Design & Development"
+            category="mobile app"
+            heading="এন্ড্রয়েড এবং আইওএস মোবাইল সফটওয়্যার"
             img={service4}
             dataAos="flip-left"
           />
+          <ServiceCard
+            bg="#ffdadb"
+            category="security"
+            heading="সাইবার সিকিউরিটি"
+            img={service2}
+            dataAos="flip-left"
+          />
         </div>
-        <div className="flex flex-wrap justify-center space-y-6 md:space-y-0 mt-24" data-aos="fade-up" data-aos-duration="1000">
+        <div
+          className="flex flex-wrap justify-center space-y-6 md:space-y-0 mt-24"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="text-3xl">
             <span>Let's Start A</span>
             {' '}

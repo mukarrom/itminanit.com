@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import './Landing.css';
 import vector1 from '../../assets/vector/vector-art-1.png';
+import Modal from '../Modal/Modal';
 import Navbar from '../Navigation/Navbar';
+import './Landing.css';
 
-function Test() {
+function Landing() {
   return (
     <div className="w-full h-full test-bg flex flex-col justify-center items-center gap-y-10">
       <div className="w-full mt-10 px-4 transition-all ease-in-out duration-1000">
@@ -18,21 +19,25 @@ function Test() {
           <img src={vector1} alt="Banner" className="w-full" />
         </motion.div>
         <div className="text-white w-full lg:w-1/2 px-4 mdMax:mt-16">
-          <h5 className="text-center md:text-start text-xl  text-[#F02EB5] font-semibold creative-animate mb-12">
+          <h5
+            className="text-center md:text-start text-xl  text-[#F02EB5] font-semibold creative-animate mb-12"
+            data-aos="fade-down"
+            data-aos-duration="500"
+          >
             A Trusted Company
           </h5>
           <h2
             className="text-center md:text-start text-[calc(1.375rem+2vw)] leading-4 font-extrabold ki-animate font-hard mt-6 mb-8"
-            // data-aos="fade-down"
-            // data-aos-duration="1000"
+            data-aos="fade-left"
+            data-aos-duration="500"
           >
             খিদমা আইটি
           </h2>
           <p
             className="max-w-lg text-justify lg:text-justify font-kalpurush text-xl"
-            // data-aos="zoom-in"
-            // data-aos-duration="500"
-            // data-aos-delay="100"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-delay="100"
           >
             বর্তমান যুগ বিজ্ঞান ও প্রযুক্তির যুগ। প্রযুক্তির এই যুগে সফটওয়্যারের
             ব্যবহার আমাদের নিত্য জীবন অনেক সহজ সুন্দর এবং আকর্ষনীয় করে তুলেছে।
@@ -43,17 +48,21 @@ function Test() {
             দ্রুততম সময়ে করা যাবে, যেকোন সময়ে, যেকোন স্থান থেকে।
           </p>
           <div className="flex justify-center lg:justify-start">
-            <button
+            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+            <label
+              htmlFor="landing-modal"
               type="button"
-              className="py-3 px-8 bg-[#03a9f5] rounded-full hover:bg-white hover:text-black"
+              className="py-3 px-8 bg-[#03a9f5] rounded-full hover:bg-white hover:text-black cursor-pointer"
             >
               আরো জানুন
-            </button>
+            </label>
           </div>
         </div>
       </div>
+      {/* modal */}
+      <Modal />
     </div>
   );
 }
 
-export default Test;
+export default Landing;

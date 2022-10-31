@@ -25,6 +25,6 @@ module.exports = {
     'max-len': 0,
     'no-tabs': 1,
     'no-mixed-spaces-and-tabs': 1,
-    'react/no-array-index-key': 0,
+    'react/no-array-index-key': 1,
   },
 };

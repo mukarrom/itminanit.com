@@ -20,14 +20,11 @@ function ProductCard({
       </div>
       <div className="px-6 py-8 flex flex-col justify-center items-center bg-[#f7f7d9]">
         <h2 className="h3 text-center text-[#55595c]">{name}</h2>
-        <p className="text-center text-sm text-[rgb(85,89,92)]">
-          {heading}
-        </p>
+        <p className="text-center text-sm text-[rgb(85,89,92)]">{heading}</p>
         <ul className="list-disc">
-          {list?.map((a) => (
-            <li className="">{a}</li>
+          {list?.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
-
         </ul>
       </div>
       <div className="absolute bottom-0 w-full flex justify-center mb-8">
