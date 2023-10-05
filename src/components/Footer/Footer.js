@@ -15,7 +15,7 @@ function Footer() {
         <footer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 lg:gap-y-0 px-4 md:mx-8 mb-10 justify-evenly text-base-content">
           <div className="flex flex-col justify-start items-start">
             <h1 className="h1 font-extrabold uppercase text-[#3363f4] mb-2 mt-6 font-hard">
-              খিদমা আইটি
+              ইতমিনান আইটি
             </h1>
             <p className="p text-[#6a6a8e] mb-6 font-kalpurush text-xl">
               প্রযুক্তির যুগে আপনার প্রতিষ্ঠানকে আরো এগিয়ে নিতে আমরা আছি আপনার
@@ -44,7 +44,7 @@ function Footer() {
                   <br />
                   <span>
                     <a href="mailto:info@khidmait.com" className="">
-                      info@khidmait.com
+                      info@itminanit.com
                     </a>
                   </span>
                 </p>
@@ -59,7 +59,7 @@ function Footer() {
                   <br />
                   <span>
                     <a href="tel:+8809611496850" className="">
-                      +8809611496850
+                      +8801970858959
                     </a>
                   </span>
                 </p>
@@ -74,7 +74,7 @@ function Footer() {
                   <br />
                   <span className="">
                     {' '}
-                    Bhairabpur 2350, Bhairab, Kishoreganj, Dhaka, Bangladesh
+                    South Sripur, Talpotti, EPZ, Ashulia, Savar, Dhaka, Bangladesh
                   </span>
                 </p>
               </li>
@@ -186,7 +186,11 @@ function Footer() {
           </div>
           <div>
             <p>
-              Copyright © 2022 - All right reserved by Khidma IT Industries Ltd
+              Copyright ©
+              {' '}
+              {new Date().getFullYear()}
+              {' '}
+              - All right reserved by Itminan IT Industries Ltd
             </p>
           </div>
         </footer>

@@ -4,12 +4,12 @@
 .logo-animate {
 	position: relative;
 	font-weight: 900;
-padding-left: 5px;
+	padding-left: 5px;
 	/* color: #365df1; */
 	/* -webkit-text-stroke: 0.1vw #6c707c; */
 }
 .logo-animate::before {
-	content: 'খিদমা_আইটি';
+	content: 'ইতমিনান_আইটি';
 	font-family: 'CharuChandan3D', sans-serif;
 	position: absolute;
 	top: 0;
@@ -43,7 +43,7 @@ padding-left: 5px;
 	@apply my-0 mx-4 mdMax:text-center mdMax:m-0  mdMax:hover:bg-[#eee];
 }
 .nav-anchor-style {
-	@apply block w-full mdMax:hover:text-black mdMax:w-full mdMax:py-2  mdMax:px-8 after:block after:w-0 after:h-[2px] mdMax:after:bg-gradient-to-r from-[#7004BC] to-[#375DF1] after:bg-[#4ef05b] hover:after:w-full hover:after:transition-w-1;
+	@apply block w-full mdMax:hover:text-black mdMax:w-full mdMax:py-2  mdMax:px-8 after:block after:w-0 after:h-[2px] mdMax:after:bg-gradient-to-r from-[#7004BC] to-[#375DF1] after:bg-[#4ef05b] hover:after:w-full hover:after:transition-all;
 }
 .m-active {
 	@apply font-bold after:w-full after:h-[2px] after:block after:bg-white;

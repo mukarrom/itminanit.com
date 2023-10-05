@@ -56,12 +56,12 @@ function About() {
             data-aos-delay="600"
             data-aos-duration="500"
           >
-            <span className="text-[#7004bc]">খিদমা আইটি</span>
+            <span className="text-[#7004bc]">ইতমিনান আইটি</span>
             {' '}
             বাংলাদেশের একটি
             শীর্ষস্থানীয় সফটওয়্যার এবং আইটি সেবা প্রদানকারী কোম্পানি। ২০২০ সাল থেকে
             {' '}
-            <span className="text-[#7004bc]">খিদমা আইটি</span>
+            <span className="text-[#7004bc]">ইতমিনান আইটি</span>
             {' '}
             সফলভাবে
             প্রচুর প্রকল্প সম্পন্ন করেছে। আমরা বিশেষভাবে শিক্ষা ব্যবস্থাপনা,

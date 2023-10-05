@@ -28,19 +28,19 @@ export default function Navbar() {
 				  : { boxShadow: '0 2px 2px 2px rgba(9, 9, 9, 0.23)' }
 			}
     >
-      <a href="/" className="px-4">
+      {/* <a href="/" className="px-4">
         <img
           src={scrolling ? '4.png' : '3.png'}
           alt=""
           className="w-[60px] h-[60px] rounded"
         />
-      </a>
+      </a> */}
       <a
         href="/"
         className="brand-name text-xl ml-4 logo-animate font-3d"
-        data-text="Khidma-it"
+        data-text="ইতমিনান_আইটি"
       >
-        <span className="opacity-0">খিদমা_আইটি</span>
+        <span className="opacity-0">ইতমিনান_আইটি</span>
       </a>
       <button
         className="hamburger"

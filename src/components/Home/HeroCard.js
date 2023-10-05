@@ -29,7 +29,7 @@ function HeroCard() {
             data-aos="fade-down"
             data-aos-duration="1000"
           >
-            খিদমা আইটি
+            ইতমিনান আইটি
           </h1>
         </div>
         <p

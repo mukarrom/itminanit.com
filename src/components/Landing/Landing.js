@@ -26,7 +26,7 @@ function Test() {
             // data-aos="fade-down"
             // data-aos-duration="1000"
           >
-            খিদমা আইটি
+            ইতমিনান আইটি
           </h2>
           <p
             className="max-w-lg text-justify lg:text-justify font-kalpurush text-xl"

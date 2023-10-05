@@ -9,10 +9,16 @@ function Services() {
   return (
     <section className="bg-service-pattern">
       <div className="font-[Poppins]  mx-auto py-24 xl:max-w-6xl">
-        <p className="uppercase text-center text-pink text-lg" data-aos="zoom-in">
+        <p
+          className="uppercase text-center text-pink text-lg"
+          data-aos="zoom-in"
+        >
           Services We're Provided
         </p>
-        <h1 className="h1 text-center text-[#3b224e] font-bold mb-20" data-aos="zoom-in-up">
+        <h1
+          className="h1 text-center text-[#3b224e] font-bold mb-20"
+          data-aos="zoom-in-up"
+        >
           Our Digital Marketing Services
         </h1>
         <div className="card-wrapper grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8">
@@ -45,7 +51,11 @@ function Services() {
             dataAos="flip-left"
           />
         </div>
-        <div className="flex flex-wrap justify-center space-y-6 md:space-y-0 mt-24" data-aos="fade-up" data-aos-duration="1000">
+        <div
+          className="flex flex-wrap justify-center space-y-6 md:space-y-0 mt-24"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="text-3xl">
             <span>Let's Start A</span>
             {' '}
